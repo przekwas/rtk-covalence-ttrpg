@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rtk-covalence-ttrpg/static/css/main.f233f7d3.css",
+    "main.js": "/rtk-covalence-ttrpg/static/js/main.22854823.js",
+    "index.html": "/rtk-covalence-ttrpg/index.html",
+    "main.f233f7d3.css.map": "/rtk-covalence-ttrpg/static/css/main.f233f7d3.css.map",
+    "main.22854823.js.map": "/rtk-covalence-ttrpg/static/js/main.22854823.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f233f7d3.css",
+    "static/js/main.22854823.js"
+  ]
+}
