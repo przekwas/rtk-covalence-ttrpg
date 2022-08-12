@@ -26,6 +26,7 @@ export const skillsMap = {
 	RECYCLING: 'recycling',
 	LOGGING: 'logging',
 	SOCIAL: 'social',
+	PARSING: 'parsing',
 	TECH_LITERACY: 'techLiteracy',
 	ACTIVE_LISTEN: 'activeListen',
 	DOCUMENTATION: 'documentation'
