@@ -10,10 +10,10 @@ const attributesArray = [
 			'Dexterity is important for typing speed and your ability to stealthily write and deploy code.'
 	},
 	{
-		type: 'grit',
+		type: 'tenacity',
 		Icon: GiHeartWings,
 		description:
-			'Grit is passion and perseverance for long-term and meaningful goals.  It helps you sit in your chair longer, find typos without crushing your spirit, and the courage to tackle otherwise impossible coding problems.'
+			'Tenacity is determination.  It helps you sit in your chair longer, find typos without crushing your spirit, and the courage to tackle otherwise impossible coding problems.'
 	},
 	{
 		type: 'logic',
@@ -38,7 +38,7 @@ const attributesArray = [
 const Attributes = () => {
 	return (
 		<div className="container mx-auto my-5">
-			<div className="mb-5 text-4xl font-extrabold text-center">Attributes</div>
+			<div className="mb-5 text-4xl font-extrabold text-center" id="game-text">Attributes</div>
 			<section className="flex flex-wrap items-stretch justify-center w-full overflow-hidden md:-mx-3">
 				{attributesArray.map(attr => (
 					<AttributeCard key={attr.type} {...attr} />

@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
 	dexterity: 1,
-	grit: 1,
+	tenacity: 1,
 	logic: 1,
 	creativity: 1,
 	learning: 1,

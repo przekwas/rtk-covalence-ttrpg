@@ -23,24 +23,10 @@ const initialState = {
 					current: 1,
 					max: 10
 				}
-			},
-			acrobatics: {
-				display: 'Acrobatics',
-				points: {
-					current: 1,
-					max: 10
-				}
-			},
-			driving: {
-				display: 'Driving',
-				points: {
-					current: 1,
-					max: 10
-				}
 			}
 		}
 	},
-	grit: {
+	tenacity: {
 		skills: {
 			sitting: {
 				display: 'Sitting Endurance',
@@ -58,6 +44,13 @@ const initialState = {
 			},
 			imposter: {
 				display: 'Resist Imposter Syndrome',
+				points: {
+					current: 1,
+					max: 10
+				}
+			},
+			caffeine: {
+				display: 'Caffeine Tolerance',
 				points: {
 					current: 1,
 					max: 10
@@ -113,13 +106,6 @@ const initialState = {
 					max: 10
 				}
 			},
-			phishing: {
-				display: 'Phising',
-				points: {
-					current: 1,
-					max: 10
-				}
-			},
 			social: {
 				display: 'Social Engineering',
 				points: {
@@ -170,11 +156,20 @@ const initialState = {
 const skillsSlice = createSlice({
 	initialState,
 	name: 'skills',
-	reducers: {}
+	reducers: {
+		increaseSkill: (state, action) => {
+			state[action.payload.attr].skills[action.payload.skill].points.current++;
+			state.points.current--;
+		},
+		decreaseSkill: (state, action) => {
+			state[action.payload.attr].skills[action.payload.skill].points.current--;
+			state.points.current++;
+		}
+	}
 });
 
-const { reducer } = skillsSlice;
+const { reducer, actions } = skillsSlice;
 
-// export const { increase, descrease } = actions;
+export const { increaseSkill, decreaseSkill } = actions;
 
 export default reducer;
