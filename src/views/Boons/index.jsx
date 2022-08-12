@@ -1,67 +1,4 @@
-import React from 'react';
-
-const boonsArray = [
-	{
-		id: 1,
-		name: 'Night Owl',
-		requirements: [],
-		description: 'You are habitually active at night.',
-		bonuses: [
-			{
-				type: 'skill',
-				key: 'stealth',
-				display: '+1 Stealth',
-				value: 1
-			},
-			{
-				type: 'skill',
-				key: 'caffeine',
-				display: '+1 Caffeine Tolerance',
-				value: 1
-			}
-		]
-	},
-	{
-		id: 2,
-		name: 'Thief',
-		requirements: [
-			{
-				type: 'attribute',
-				key: 'dexterity',
-				display: 'Dexterity',
-				value: 10
-			}
-		],
-		description: 'You are naturally inclinded to clandestine activities.',
-		bonuses: [
-			{
-				type: 'attribute',
-				key: 'dexterity',
-				display: '+1 Dexterity',
-				value: 1
-			},
-			{
-				type: 'skill',
-				key: 'stealth',
-				display: '+1 Stealth',
-				value: 1
-			},
-			{
-				type: 'skill',
-				key: 'sleightOfHand',
-				display: '+2 Sleight of Hand',
-				value: 2
-			}
-		]
-	},
-	{
-		id: 3,
-		name: 'Hardware Hoarder',
-		requirements: [],
-		description: 'You have saved every cable, computer, and accessory.  Your bountiful hardware resources and knowledge of them allow you to be able to handle even the most archaic of codebases.',
-		bonuses: []
-	}
-];
+import { boonsArray } from '../../assets/boons';
 
 const Boons = () => {
 	return (
@@ -76,7 +13,7 @@ const Boons = () => {
 						className="w-full my-2 overflow-hidden md:w-1/3 md:my-3 md:px-3">
 						<div className="shadow-xl card bg-secondary text-secondary-content">
 							<div className="card-body">
-								<div className="card-title">{boon.name}</div>
+								<div className="font-mono card-title">{boon.name}</div>
 								<div>{boon.description}</div>
 								<div className="flex flex-wrap items-center justify-start -mx-1">
 									{boon.bonuses.length > 0 && (
