@@ -124,6 +124,76 @@ export const boonsArray = [
 				value: 1
 			}
 		]
+	},
+	{
+		id: 7,
+		name: 'LG Tesler',
+		requirements: [],
+		description: "You're personally responsible for 0.1% of keyboard cap sales in your region.",
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				key: skillsMap.RECYCLING,
+				display: '+3 Recycling Old Projects',
+				value: 3
+			}
+		]
+	},
+	{
+		id: 8,
+		name: 'Bookworm',
+		requirements: [],
+		description: 'Your years of taking notes in group projects are starting to pay off.',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				key: skillsMap.DOCUMENTATION,
+				display: '+3 Reading Documentation',
+				value: 3
+			}
+		]
+	},
+	{
+		id: 9,
+		name: 'Mavis Beacon',
+		requirements: [],
+		description:
+			'Remember that time when you came in first place in the middle school typing contest with 23 words per minute?',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				key: skillsMap.TYPING,
+				display: '+4 Typing Speed',
+				value: 4
+			}
+		]
+	},
+	{
+		id: 10,
+		name: 'Fat Fingres',
+		requirements: [],
+		description:
+			'You are comfortable with your body, you are not comfortable with how it interacts with a keyboard.',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				key: skillsMap.DEBUGGING,
+				display: '+1 Debugging Spirit',
+				value: 1
+			},
+			{
+				type: typeMap.SKILL,
+				key: skillsMap.LOGGING,
+				display: '+1 Console Logging',
+				value: 1
+			},
+			{
+				type: typeMap.SKILL,
+				key: skillsMap.DOCUMENTATION,
+				display: '+1 Reading Documentation',
+				value: 1
+			}
+		]
 	}
 ];
 
