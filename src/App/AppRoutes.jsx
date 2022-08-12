@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { Home, Attributes, Boons, Curses, Perks, Details } from '../views';
+import { Home, Attributes, Boons, Curses, Details } from '../views';
 
 const AppRoutes = () => {
 	return (
@@ -9,7 +9,6 @@ const AppRoutes = () => {
 			<Route path="/attributes" element={<Attributes />} />
 			<Route path="/boons" element={<Boons />} />
 			<Route path="/curses" element={<Curses />} />
-			<Route path="/perks" element={<Perks />} />
 			<Route path="/details" element={<Details />} />
 		</Routes>
 	);
