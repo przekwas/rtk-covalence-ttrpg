@@ -37,9 +37,13 @@ const Details = () => {
 			</section>
 			<div className="font-mono divider">Traits</div>
 			<section className="flex flex-wrap items-stretch justify-center w-full overflow-hidden md:-mx-3">
-				{selectedTraits.map(trait => (
-					<TraitDetails key={trait.id} trait={trait} />
-				))}
+				{selectedTraits.length ? (
+					selectedTraits.map(trait => <TraitDetails key={trait.id} trait={trait} />)
+				) : (
+					<div className="mb-5 text-4xl font-extrabold text-center" id="game-text">
+						None Selected
+					</div>
+				)}
 			</section>
 		</div>
 	);
