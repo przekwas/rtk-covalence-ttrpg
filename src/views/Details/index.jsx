@@ -1,3 +1,4 @@
+import React from 'react';
 import { useSelector } from 'react-redux';
 
 import AttributeDetails from './AttrDetails';
@@ -34,9 +35,18 @@ const Details = () => {
 			{description.name || description.handle ? (
 				<div className="w-full mx-auto shadow-xl card lg:w-1/2 bg-primary text-primary-content">
 					<div className="card-body">
-						<h2 className="font-mono text-4xl card-title">{description.handle}</h2>
-						<h3 className="text-sm italic font-semibold card-title">{description.name}</h3>
-						<p>{description.background}</p>
+						<h2 className="font-mono text-2xl font-extrabold lg:text-4xl">
+							{description.handle}
+						</h2>
+						<h3 className="text-sm italic font-semibold lg:text-lg card-title">
+							{description.name}
+						</h3>
+						{description.background.split('\n').map(para => (
+							<React.Fragment key={para}>
+								<p>{para}</p>
+								<br />
+							</React.Fragment>
+						))}
 					</div>
 				</div>
 			) : (
