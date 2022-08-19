@@ -4,7 +4,7 @@ import CovalenceLogo from '../../assets/covalence-mark-blue-gradient.png';
 const Home = () => {
 	return (
 		<div>
-			<div className="hero bg-base-200" style={{ minHeight: 'calc(100vh - 70px)' }}>
+			<div className="min-h-screen hero bg-base-200">
 				<div className="flex-col hero-content lg:flex-row-reverse">
 					<img src={CovalenceLogo} className="max-w-sm rounded-lg" alt="covalence logo" />
 					<div>

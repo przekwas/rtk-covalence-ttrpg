@@ -37,7 +37,7 @@ const attributesArray = [
 
 const Attributes = () => {
 	return (
-		<div className="container mx-auto my-5">
+		<div className="container mx-auto mt-20 mb-5">
 			<div className="mb-5 text-4xl font-extrabold text-center" id="game-text">Attributes</div>
 			<section className="flex flex-wrap items-stretch justify-center w-full overflow-hidden md:-mx-3">
 				{attributesArray.map(attr => (

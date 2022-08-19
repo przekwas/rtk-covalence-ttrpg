@@ -14,13 +14,8 @@ const SideDrawer = ({ toggleVisible }) => {
 				</NavLink>
 			</li>
 			<li>
-				<NavLink onClick={toggleVisible} to="/boons">
-					Boons
-				</NavLink>
-			</li>
-			<li>
-				<NavLink onClick={toggleVisible} to="/curses">
-					Curses
+				<NavLink onClick={toggleVisible} to="/traits">
+					Traits
 				</NavLink>
 			</li>
 			<li>

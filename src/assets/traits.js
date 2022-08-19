@@ -1,6 +1,6 @@
 import { typeMap, attrMap, skillsMap } from './keyMaps';
 
-export const boonsArray = [
+export const traitsArray = [
 	{
 		id: 1,
 		name: 'Night Owl',
@@ -9,13 +9,13 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.STEALTH,
+				pair: skillsMap.STEALTH,
 				display: '+1 Stealth',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.CAFFEINE,
+				pair: skillsMap.CAFFEINE,
 				display: '+1 Caffeine Tolerance',
 				value: 1
 			}
@@ -27,7 +27,7 @@ export const boonsArray = [
 		requirements: [
 			{
 				type: typeMap.ATTR,
-				key: attrMap.DEXTERITY,
+				pair: attrMap.DEXTERITY,
 				display: 'Dexterity',
 				value: 10
 			}
@@ -36,19 +36,19 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.ATTR,
-				key: attrMap.DEXTERITY,
+				pair: attrMap.DEXTERITY,
 				display: '+1 Dexterity',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.STEALTH,
+				pair: skillsMap.STEALTH,
 				display: '+1 Stealth',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.SLEIGHT_OF_HAND,
+				pair: skillsMap.SLEIGHT_OF_HAND,
 				display: '+2 Sleight of Hand',
 				value: 2
 			}
@@ -71,19 +71,19 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.ATTR,
-				key: attrMap.DEXTERITY,
+				pair: attrMap.DEXTERITY,
 				display: '+1 Dexterity',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.CAFFEINE,
+				pair: skillsMap.CAFFEINE,
 				display: '+1 Caffeine Tolerance',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.SITTING,
+				pair: skillsMap.SITTING,
 				display: '+2 Sitting Endurance',
 				value: 2
 			}
@@ -98,7 +98,7 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: 'skill',
-				key: 'caffeine',
+				pair: 'caffeine',
 				display: '+3 Caffeine Tolerance',
 				value: 3
 			}
@@ -113,13 +113,13 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.ALGORITHM,
+				pair: skillsMap.ALGORITHM,
 				display: '+1 Algorithm Construction',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.PLANNING,
+				pair: skillsMap.PLANNING,
 				display: '+1 Planning',
 				value: 1
 			}
@@ -129,11 +129,12 @@ export const boonsArray = [
 		id: 7,
 		name: 'LG Tesler',
 		requirements: [],
-		description: "You're personally responsible for 0.1% of keyboard cap sales in your region.",
+		description:
+			"You're personally responsible for 0.1% of pairboard cap sales in your region.",
 		bonuses: [
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.RECYCLING,
+				pair: skillsMap.RECYCLING,
 				display: '+3 Recycling Old Projects',
 				value: 3
 			}
@@ -148,13 +149,13 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.DOCUMENTATION,
+				pair: skillsMap.DOCUMENTATION,
 				display: '+3 Reading Documentation',
 				value: 3
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.SOCIAL,
+				pair: skillsMap.SOCIAL,
 				display: '-1 Social Engineering',
 				value: -1
 			}
@@ -169,7 +170,7 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.TYPING,
+				pair: skillsMap.TYPING,
 				display: '+4 Typing Speed',
 				value: 4
 			}
@@ -180,23 +181,23 @@ export const boonsArray = [
 		name: 'Fat Fingres',
 		requirements: [],
 		description:
-			'You are comfortable with your body, you are not comfortable with how it interacts with a keyboard.',
+			'You are comfortable with your body, you are not comfortable with how it interacts with a pairboard.',
 		bonuses: [
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.DEBUGGING,
+				pair: skillsMap.DEBUGGING,
 				display: '+1 Debugging Spirit',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.LOGGING,
+				pair: skillsMap.LOGGING,
 				display: '+1 Console Logging',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.DOCUMENTATION,
+				pair: skillsMap.DOCUMENTATION,
 				display: '+1 Reading Documentation',
 				value: 1
 			}
@@ -210,19 +211,19 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.ATTR,
-				key: attrMap.LEARNING,
+				pair: attrMap.LEARNING,
 				display: '+1 Learning',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.DEBUGGING,
+				pair: skillsMap.DEBUGGING,
 				display: '+1 Debugging Spirit',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.PLANNING,
+				pair: skillsMap.PLANNING,
 				display: '+1 Planning',
 				value: 1
 			}
@@ -237,19 +238,19 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.STEALTH,
+				pair: skillsMap.STEALTH,
 				display: '+2 Stealth',
 				value: 2
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.SEARCH,
+				pair: skillsMap.SEARCH,
 				display: '+2 Search Engine Skill',
 				value: 2
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.TECH_LITERACY,
+				pair: skillsMap.TECH_LITERACY,
 				display: '-1 Technical Literacy',
 				value: -1
 			}
@@ -260,23 +261,23 @@ export const boonsArray = [
 		name: 'Click-Clacker',
 		requirements: [],
 		description:
-			'Mechanical keyboards are life.  And you are all about Cherry MX Blue switches: the loudest and most tactile switches.  You must sacrifice everything for the classic "click."',
+			'Mechanical pairboards are life.  And you are all about Cherry MX Blue switches: the loudest and most tactile switches.  You must sacrifice everything for the classic "click."',
 		bonuses: [
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.TYPING,
+				pair: skillsMap.TYPING,
 				display: '+3 Typing Speed',
 				value: 3
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.STEALTH,
+				pair: skillsMap.STEALTH,
 				display: '-1 Stealth',
 				value: -1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.ACTIVE_LISTEN,
+				pair: skillsMap.ACTIVE_LISTEN,
 				display: '-1 Active Listening',
 				value: -1
 			}
@@ -291,25 +292,25 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.ATTR,
-				key: attrMap.CREATIVITY,
+				pair: attrMap.CREATIVITY,
 				display: '+1 Creativity',
 				value: 1
 			},
 			{
 				type: typeMap.ATTR,
-				key: attrMap.DEXTERITY,
+				pair: attrMap.DEXTERITY,
 				display: '-1 Dexterity',
 				value: -1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.PLANNING,
+				pair: skillsMap.PLANNING,
 				display: '+1 Planning',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.SITTING,
+				pair: skillsMap.SITTING,
 				display: '+1 Sitting Endurance',
 				value: 1
 			}
@@ -324,25 +325,25 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.ATTR,
-				key: attrMap.LOGIC,
+				pair: attrMap.LOGIC,
 				display: '+1 Logic',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.DEBUGGING,
+				pair: skillsMap.DEBUGGING,
 				display: '+1 Debugging Spirit',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.PARSING,
+				pair: skillsMap.PARSING,
 				display: '+1 Parsing',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.IMPOSTER,
+				pair: skillsMap.IMPOSTER,
 				display: '-2 Resist Imposter Syndrome',
 				value: -2
 			}
@@ -357,31 +358,31 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.ATTR,
-				key: attrMap.LEARNING,
+				pair: attrMap.LEARNING,
 				display: '+1 Learning',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.TECH_LITERACY,
+				pair: skillsMap.TECH_LITERACY,
 				display: '+1 Technical Literacy',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.ACTIVE_LISTEN,
+				pair: skillsMap.ACTIVE_LISTEN,
 				display: '+2 Active Listening',
 				value: 2
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.SITTING,
+				pair: skillsMap.SITTING,
 				display: '-1 Sitting Endurance',
 				value: -1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.IMPOSTER,
+				pair: skillsMap.IMPOSTER,
 				display: '-1 Resist Imposter Syndrome',
 				value: -1
 			}
@@ -396,7 +397,7 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.SEARCH,
+				pair: skillsMap.SEARCH,
 				display: '+3 Search Engine Skill',
 				value: 3
 			}
@@ -411,31 +412,31 @@ export const boonsArray = [
 		bonuses: [
 			{
 				type: typeMap.ATTR,
-				key: attrMap.DEXTERITY,
+				pair: attrMap.DEXTERITY,
 				display: '+1 Dexterity',
 				value: 1
 			},
 			{
 				type: typeMap.ATTR,
-				key: attrMap.TENACITY,
+				pair: attrMap.TENACITY,
 				display: '+1 Tenacity',
 				value: 1
 			},
 			{
 				type: typeMap.ATTR,
-				key: attrMap.CREATIVITY,
+				pair: attrMap.CREATIVITY,
 				display: '+1 Creativity',
 				value: 1
 			},
 			{
 				type: typeMap.ATTR,
-				key: attrMap.LEARNING,
+				pair: attrMap.LEARNING,
 				display: '+1 Learning',
 				value: 1
 			},
 			{
 				type: typeMap.SKILL,
-				key: skillsMap.SOCIAL,
+				pair: skillsMap.SOCIAL,
 				display: '-5 Social Engineering',
 				value: -5
 			}
@@ -452,7 +453,7 @@ export const boonsArray = [
 	bonuses: [
 		{
 			type: 'template',
-			key: 'template',
+			pair: 'template',
 			display: '+3 Template',
 			value: 3
 		}

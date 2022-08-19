@@ -1,4 +1,4 @@
-import { GiMineExplosion, GiSave } from 'react-icons/gi';
+import { GiMineExplosion, GiSave, GiHazardSign } from 'react-icons/gi';
 import { toast } from 'react-toastify';
 
 const ToastTemplate = ({ message, icon }) => {
@@ -10,7 +10,7 @@ const ToastTemplate = ({ message, icon }) => {
 	);
 };
 
-export const error = message =>
+const error = message =>
 	toast.error(
 		<ToastTemplate message={message} icon={<GiMineExplosion className="text-4xl" />} />,
 		{
@@ -21,7 +21,18 @@ export const error = message =>
 		}
 	);
 
-export const success = message =>
+const warning = message =>
+	toast.warning(
+		<ToastTemplate message={message} icon={<GiHazardSign className="text-4xl" />} />,
+		{
+			className: 'border-l-8 border-yellow-500',
+			bodyClassName: 'text-yellow-100',
+			progressClassName: 'bg-yellow-600',
+			style: { background: '#ca8a04' }
+		}
+	);
+
+const success = message =>
 	toast.success(<ToastTemplate message={message} icon={<GiSave className="text-4xl" />} />, {
 		className: 'border-l-8 border-green-500',
 		bodyClassName: 'text-green-100',
@@ -31,7 +42,8 @@ export const success = message =>
 
 const Toast = {
 	success,
-	error
+	error,
+	warning
 };
 
 export default Toast;
