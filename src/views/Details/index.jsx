@@ -44,7 +44,6 @@ const Details = () => {
 						{description.background.split('\n').map(para => (
 							<React.Fragment key={para}>
 								<p>{para}</p>
-								<br />
 							</React.Fragment>
 						))}
 					</div>
