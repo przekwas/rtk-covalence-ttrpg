@@ -9,6 +9,11 @@ const SideDrawer = ({ toggleVisible }) => {
 				</NavLink>
 			</li>
 			<li>
+				<NavLink onClick={toggleVisible} to="/description">
+					Description
+				</NavLink>
+			</li>
+			<li>
 				<NavLink onClick={toggleVisible} to="/attributes">
 					Attributes
 				</NavLink>

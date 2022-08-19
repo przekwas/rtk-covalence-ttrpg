@@ -441,6 +441,233 @@ export const traitsArray = [
 				value: -5
 			}
 		]
+	},
+	{
+		id: 19,
+		name: 'Zero Cool',
+		requirements: [],
+		description: 'Good guy, bad reputation, and no style whatsoever.',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.ALGORITHM,
+				display: '+3 Algorithm Construction',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.REVERSE,
+				display: '+3 Reverse Engineering',
+				value: 3
+			}
+		]
+	},
+	{
+		id: 20,
+		name: 'Acid Burn',
+		requirements: [
+			{
+				type: typeMap.ATTR,
+				pair: attrMap.CREATIVITY,
+				display: 'Creativity',
+				value: 10
+			}
+		],
+		description: 'Looks and skills that can kill.',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SOCIAL,
+				display: '+3 Social Engineering',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SEARCH,
+				display: '+3 Search Engine Skill',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.TYPING,
+				display: '+1 Typing Speed',
+				value: 1
+			}
+		]
+	},
+	{
+		id: 21,
+		name: 'Cereal Killer',
+		requirements: [],
+		description:
+			'Liked by everything and everyone except the infamous brothers Snap, Crackle, and Pop.',
+		bonuses: []
+	},
+	{
+		id: 22,
+		name: 'Chronic 2001',
+		requirements: [],
+		description:
+			"Knows everything, but remembers nothing. Friend of all dogs. Constantly hears random doorbells that don't exist.",
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SITTING,
+				display: '+3 Sitting Endurance',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.IMPOSTER,
+				display: '+3 Resist Imposter Syndrome',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.ACTIVE_LISTEN,
+				display: '-3 Active Listening',
+				value: -3
+			}
+		]
+	},
+	{
+		id: 23,
+		name: "Mom's Meatloaf",
+		requirements: [],
+		description: 'Never has to pay rent and has access to unlimited amounts of Mountain Dew.',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SOCIAL,
+				display: '-5 Social Engineering',
+				value: -5
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.CAFFEINE,
+				display: '+5 Caffeine Tolerance',
+				value: 5
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.TECH_LITERACY,
+				display: '+1 Technical Literacy',
+				value: 1
+			}
+		]
+	},
+	{
+		id: 24,
+		name: 'The Hype Guy',
+		requirements: [],
+		description:
+			'Your legend began in high school twirling Little Caesar\'s "Hot N Ready" signs on the side of the street. You don\'t really know any specific skills or specialties, but your presence and positive energy is the keystone of any successful mission.',
+		bonuses: []
+	},
+	{
+		id: 25,
+		name: 'Always Blue',
+		requirements: [],
+		description:
+			"You're the glue that holds the team together at their darkest moments, and this unshakable charisma is how you continue to fail upwards despite all odds.",
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.ACTIVE_LISTEN,
+				display: '+3 Active Listening',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.DEBUGGING,
+				display: '+3 Debugging Spirit',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.IMPOSTER,
+				display: '-1 Resist Imposter Syndrome',
+				value: -1
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SOCIAL,
+				display: '-2 Social Engineering',
+				value: -2
+			}
+		]
+	},
+	{
+		id: 26,
+		name: 'The Guru',
+		requirements: [],
+		description:
+			'Your reputation precedes your barefoot pitter patter as you walk into the team meeting. You\'ve had a sudden epiphany over the long weekend that will provide a solution to all of your woes, thanks in large part to your weekly meditation retreat and indulgence in some "questionable" edible arrangements.',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SLEIGHT_OF_HAND,
+				display: '+2 Sleight of Hand',
+				value: 2
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SOCIAL,
+				display: '+2 Social Engineering',
+				value: 2
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.IMPOSTER,
+				display: '+5 Resist Imposter Syndrome',
+				value: 5
+			}
+		]
+	},
+	{
+		id: 27,
+		name: 'Rainman',
+		requirements: [
+			{
+				type: typeMap.ATTR,
+				pair: attrMap.LOGIC,
+				display: 'Logic',
+				value: 10
+			}
+		],
+		description: 'Template Description.',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.TYPING,
+				display: '+3 Typing Speed',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.TECH_LITERACY,
+				display: '+3 Technical Literacy',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.DOCUMENTATION,
+				display: '+3 Reading Documentation',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.PARSING,
+				display: '+3 Parsing',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SOCIAL,
+				display: '-4 Social Engineering',
+				value: -4
+			}
+		]
 	}
 ];
 
