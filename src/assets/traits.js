@@ -97,8 +97,8 @@ export const traitsArray = [
 			'Your fondness of and proximity to coffee, espresso, and other caffeinated beverages have imparted you with an increased tolerance to caffeine.',
 		bonuses: [
 			{
-				type: 'skill',
-				pair: 'caffeine',
+				type: typeMap.SKILL,
+				pair: skillsMap.CAFFEINE,
 				display: '+3 Caffeine Tolerance',
 				value: 3
 			}
