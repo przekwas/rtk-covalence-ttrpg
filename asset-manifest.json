@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rtk-covalence-ttrpg/static/css/main.c770dd05.css",
-    "main.js": "/rtk-covalence-ttrpg/static/js/main.71a12e2f.js",
+    "main.js": "/rtk-covalence-ttrpg/static/js/main.042f3ba3.js",
     "static/media/covalence-mark-blue-gradient.png": "/rtk-covalence-ttrpg/static/media/covalence-mark-blue-gradient.86b1bbc42c852ec0d5ba.png",
     "index.html": "/rtk-covalence-ttrpg/index.html",
     "main.c770dd05.css.map": "/rtk-covalence-ttrpg/static/css/main.c770dd05.css.map",
-    "main.71a12e2f.js.map": "/rtk-covalence-ttrpg/static/js/main.71a12e2f.js.map"
+    "main.042f3ba3.js.map": "/rtk-covalence-ttrpg/static/js/main.042f3ba3.js.map"
   },
   "entrypoints": [
     "static/css/main.c770dd05.css",
-    "static/js/main.71a12e2f.js"
+    "static/js/main.042f3ba3.js"
   ]
 }
