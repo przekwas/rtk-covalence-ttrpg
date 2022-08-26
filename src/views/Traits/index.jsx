@@ -37,7 +37,7 @@ const Traits = () => {
 		const filtered = traitsArray.filter(trait => {
 			if (trait.bonuses.length) {
 				for (const bonus of trait.bonuses) {
-					if (filter === bonus.pair.name && Math.sign(bonus.value) !== -1) {
+					if (filter === bonus.pair?.name && Math.sign(bonus.value) !== -1) {
 						return trait;
 					}
 				}
@@ -148,7 +148,7 @@ const Traits = () => {
 										<div className="flex flex-wrap items-center justify-start -mx-1">
 											{trait.requirements.map(requirement => (
 												<div
-													key={`trait-${trait.id}-requirement-${requirement.key}`}
+													key={`trait-${trait.id}-requirement-${requirement.display}`}
 													className="px-1 mb-1">
 													<div className="badge badge-primary badge-lg">
 														{requirement.value} {requirement.display}

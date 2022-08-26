@@ -668,6 +668,159 @@ export const traitsArray = [
 				value: -4
 			}
 		]
+	},
+	{
+		id: 28,
+		name: 'Creative Burst',
+		requirements: [
+			{
+				type: typeMap.ATTR,
+				pair: attrMap.CREATIVITY,
+				display: 'Creativity',
+				value: 8
+			},
+			{
+				type: typeMap.ATTR,
+				pair: attrMap.DEXTERITY,
+				display: 'Dexterity',
+				value: 5
+			}
+		],
+		description:
+			'You wake up to a "Eureka!" moment from a fleeting dream, giving you a temporary boost to productivity. You are impervious to any interruptions in focus.',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.DEBUGGING,
+				display: '+3 Debugging Spirit',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.ALGORITHM,
+				display: '+3 Algorithm Construction',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.ALGORITHM,
+				display: '+2 Reverse Engineering',
+				value: 2
+			}
+		]
+	},
+	{
+		id: 29,
+		name: 'Could Have Been An Email',
+		requirements: [],
+		description:
+			'The sales and accounting teams for some reason rope in all of the devops and development teams to be a part of a 3 hour meeting for a product not at all related to engineering (Pokemon cards, for cats??). Your daydreaming leads to a little boost in Creativity and Logic, although your TPS reports end up getting filled out late.',
+		bonuses: [
+			{
+				type: typeMap.ATTR,
+				pair: attrMap.CREATIVITY,
+				display: '+5 Creativity',
+				value: 5
+			},
+			{
+				type: typeMap.ATTR,
+				pair: attrMap.LOGIC,
+				display: '+4 Logic',
+				value: 4
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.ACTIVE_LISTEN,
+				display: '-3 Active Listening',
+				value: -3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.PLANNING,
+				display: '-4 Planning',
+				value: -4
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SITTING,
+				display: '-3 Sitting Endurance',
+				value: -3
+			}
+		]
+	},
+	{
+		id: 30,
+		name: 'Sprint to the Sprint',
+		requirements: [
+			{
+				type: typeMap.ATTR,
+				pair: attrMap.DEXTERITY,
+				display: 'Dexterity',
+				value: 10
+			}
+		],
+		description:
+			'While seeing the light at the end of the tunnel, you get a second wind and clear out all tickets with some elegant, performant code.',
+		bonuses: [
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.CREATIVITY,
+				display: '+3 Creativity',
+				value: 3
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.DEBUGGING,
+				display: '+2 Debugging Spirit',
+				value: 2
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.TYPING,
+				display: '+3 Typing Speed',
+				value: 3
+			}
+		]
+	},
+	{
+		id: 31,
+		name: 'Nirvana',
+		requirements: [
+			{
+				type: typeMap.ATTR,
+				pair: attrMap.LOGIC,
+				display: 'Logic',
+				value: 15
+			}
+		],
+		description:
+			'Your Spotify shuffle hits pure perfection, and brings you to a state where there is no suffering, desire, or sense of self. Your code transcends the human realm and bugs are no longer possible in this state. Your headphones become ethereal yet remain affixed to your ears, drowning out anything from the mortal realm.',
+		bonuses: [
+			{
+				type: typeMap.ATTR,
+				pair: attrMap.CREATIVITY,
+				display: '+6 Creativity',
+				value: 6
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.ALGORITHM,
+				display: '+4 Algorithm Construction',
+				value: 4
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SOCIAL,
+				display: '-5 Social Engineering',
+				value: -5
+			},
+			{
+				type: typeMap.SKILL,
+				pair: skillsMap.SITTING,
+				display: '-3 Sitting Endurance',
+				value: -3
+			}
+		]
 	}
 ];
 
